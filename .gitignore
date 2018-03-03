@@ -5,7 +5,7 @@ Temp/
 Obj/
 UnityGenerated/
 Library/
-Assets/OutSide/
+Assets/OutSide/*
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
