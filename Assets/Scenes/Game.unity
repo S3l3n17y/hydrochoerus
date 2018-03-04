@@ -240,6 +240,10 @@ Transform:
   m_Father: {fileID: 940719541}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &313457712 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
+  m_PrefabInternal: {fileID: 1227044732}
 --- !u!1 &361512812
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +255,7 @@ GameObject:
   - component: {fileID: 361512815}
   - component: {fileID: 361512814}
   - component: {fileID: 361512813}
+  - component: {fileID: 361512817}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -315,12 +320,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361512812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 940719541}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &361512817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361512812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408591ac9c4ac7a488f7cb3869c33563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 313457712}
+  Distance: 1
+  Angle: {x: 0, y: 0, z: -1}
+  Offset: {x: 0, y: 1, z: 0}
 --- !u!4 &374186857 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
@@ -363,7 +383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 940719541}
   m_Layer: 0
-  m_Name: Stage
+  m_Name: StageObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +400,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 156795723}
-  - {fileID: 361512816}
   - {fileID: 1187904256}
   - {fileID: 374186857}
   m_Father: {fileID: 0}
@@ -398,7 +417,7 @@ GameObject:
   - component: {fileID: 1187904258}
   - component: {fileID: 1187904257}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,7 +434,7 @@ Transform:
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 940719541}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1187904257
 MeshRenderer:
@@ -483,7 +502,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.522
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 400096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
       propertyPath: m_LocalPosition.z
@@ -507,7 +526,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400002, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
