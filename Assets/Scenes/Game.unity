@@ -263,7 +263,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354255970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.3470001, z: 0}
+  m_LocalPosition: {x: 0, y: 1.3470001, z: 0.0755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 790517449}
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 354255970}
-  Distance: 1
+  Distance: 0
   Angle: {x: 0, y: 0, z: -1}
   Offset: {x: 0, y: 0, z: 0}
 --- !u!4 &374186857 stripped
@@ -457,7 +457,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &790517451
 CapsuleCollider:
