@@ -22,9 +22,10 @@ namespace Hydrochoerus.Core
         void Update() {
             if (Target == null) return;//ターゲットが存在しない
             Vector3 rotation = Target.transform.rotation * Angle;   //ターゲットの向きから角度分ずらす
-            Vector3 position = Offset + Target.transform.position + rotation * Distance;
+            Vector3 position = Offset + Target.transform.position;
+            position += rotation * Distance;
             gameObject.transform.position = position;
-            gameObject.transform.LookAt(Target.transform.position + Offset);
+            gameObject.transform.rotation = Quaternion.LookRotation(Target.transform.rotation * -Angle);
         }
     }
 

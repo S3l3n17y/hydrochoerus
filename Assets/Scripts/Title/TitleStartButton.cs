@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class TitleStartButton : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-    void OnClick()
+namespace Hydrochoerus.Title
+{
+    public class TitleStartButton : MonoBehaviour
     {
-        SceneManager.LoadScene("");
-    } 
+
+        // Use this for initialization
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+        void OnClick()
+        {
+            SceneManager.LoadScene("");
+        }
+    }
 }
