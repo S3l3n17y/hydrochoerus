@@ -1,0 +1,19 @@
+@startuml 
+actor Client
+actor Host
+
+
+ref over Client,Host:初期化処理
+Client->Host:接続
+activate Host
+alt 満員
+    Client<--Host:エラー通知
+else
+    Client<--Host:成功通知
+    Client ->Host:プレイヤーデータ送信
+    Client<--Host:他メンバー情報送信
+    Client<--Host:マッチ情報送信
+end 
+deactivate Host
+
+@enduml
