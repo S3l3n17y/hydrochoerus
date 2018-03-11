@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Hydrochoerus.Core;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,9 +19,10 @@ namespace Hydrochoerus.Title
         {
 
         }
-        void OnClick()
+
+        public void OnClick()
         {
-            SceneManager.LoadScene("");
+            SceneManager.LoadScene(SceneNames.TrainingScene);
         }
     }
 }

@@ -40,5 +40,13 @@ namespace Hydrochoerus.Core
                 return "Game";
             }
         }
+
+        public static string TrainingScene
+        {
+            get
+            {
+                return "Training";
+            }
+        }
     }
 }

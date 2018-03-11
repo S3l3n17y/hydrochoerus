@@ -33,7 +33,7 @@ namespace Hydrochoerus.Game
             horizontal = Input.GetAxis("Mouse X");
             vertical = Input.GetAxis("Mouse Y");
             //水平方向の回転
-            horObject.Rotate(0.0f, -horizontal, 0.0f);
+            horObject.Rotate(0.0f, horizontal, 0.0f);
             //垂直方向の回転
             Vector3 rot;
             rot.x = ClampRotX(verObject.localEulerAngles.x - vertical, 85.0f, 275.0f);
